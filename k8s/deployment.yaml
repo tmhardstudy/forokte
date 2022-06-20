@@ -13,7 +13,7 @@ spec:
         app: forokte
     spec:
       containers:
-      - image: okteto.dev/ray:latest
+      - image: okteto.dev/forokte:latest
         name: forokte
         ports:
         - containerPort: 8080
