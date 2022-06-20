@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: forokte
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: 
   template:
     metadata:
       labels:
-        app: ray
+        app: forokte
     spec:
       containers:
       - image: okteto.dev/ray:latest
-        name: ray
+        name: forokte
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: ""
         - name: Vless_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "95be0ac1-e3a4-4d3a-a62f-08b211a5ab46"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "a9e43df6-5e3a-4f8c-8543-60c150f8ce9b"
         - name: Vmess_Path
           value: "/s244"
         - name: Share_Path
